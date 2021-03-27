@@ -32,6 +32,7 @@ stages:
       displayName: Build Java Microservice
       inputs:
         mavenPomFile: 'pom.xml'
+        options: '-DskipTests=true'
         publishJUnitResults: false
         javaHomeOption: 'JDKVersion'
         mavenVersionOption: 'Default'
